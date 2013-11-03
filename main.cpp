@@ -12,7 +12,7 @@ int main(int argc, char** argv) {
   }
 
   // Reopen stdin from given file (if it's not -)
-  if (!(argv[2][0] == '-' && argv[2][1] == 0)) {
+  if (strcmp(argv[2], "-") {
     freopen(argv[2], "rb", stdin);
   }
 
